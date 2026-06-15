@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bayk4tgrkmrvu"]
+
+[ext_resource type="Texture2D" uid="uid://cll0ile1ddh6m" path="res://icon.svg" id="1_ms3ju"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ok4ba"]
+size = Vector2(89, 79)
+
+[node name="Good Dino" type="Node2D" unique_id=494693777]
+
+[node name="Fun Dino" type="CharacterBody2D" parent="." unique_id=350063687]
+
+[node name="Sprite2D" type="Sprite2D" parent="Fun Dino" unique_id=824353169]
+position = Vector2(0, -3)
+texture = ExtResource("1_ms3ju")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fun Dino" unique_id=963648470]
+position = Vector2(-0.5, -3.5)
+shape = SubResource("RectangleShape2D_ok4ba")
