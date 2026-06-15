@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ok4ba"]
 size = Vector2(89, 79)
 
-[node name="Good Dino" type="Node2D" unique_id=494693777]
+[node name="Good Dino Proto-t" type="Node2D" unique_id=494693777]
 
 [node name="Fun Dino" type="CharacterBody2D" parent="." unique_id=350063687]
 
