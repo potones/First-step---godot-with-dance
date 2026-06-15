@@ -1,17 +1,47 @@
-# Godot 4+ specific ignores
+# ==========================================
+# Godot Engine v4+ Official Ignores
+# ==========================================
 .godot/
 .nomedia
-
-# Godot-specific ignores
 .import/
+*.import
 export.cfg
 export_credentials.cfg
 *.tmp
-
-# Imported translations (automatically generated from CSV files)
 *.translation
 
-# Mono-specific ignores
+# Godot Mono (C#) Ignores
 .mono/
 data_*/
 mono_crash.*.json
+
+# ==========================================
+# Unity Engine Content Compatibility
+# ==========================================
+[Log]s/
+[Library]/
+[Temp]/
+[Obj]/
+[Build]/
+[Build]s/
+[UserSettings]/
+
+# ==========================================
+# OS & IDE Cache (회사 <-> 집 이동 필수!)
+# ==========================================
+.vs/
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.suo
+.DS_Store
+Thumbs.db
+
+# 빌드된 실행 파일들
+*.apk
+*.aab
+*.exe
+*.dll
+*.so
+*.dylib
