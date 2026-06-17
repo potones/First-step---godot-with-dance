@@ -16,3 +16,13 @@ texture = ExtResource("1_ms3ju")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fun Dino" unique_id=963648470]
 position = Vector2(-0.5, -3.5)
 shape = SubResource("RectangleShape2D_ok4ba")
+
+[node name="Two Dino" type="CharacterBody2D" parent="." unique_id=1134086693]
+
+[node name="Sprite2D" type="Sprite2D" parent="Two Dino" unique_id=358814251]
+position = Vector2(174, -1)
+texture = ExtResource("1_ms3ju")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Two Dino" unique_id=1476157077]
+position = Vector2(175, -1)
+shape = SubResource("RectangleShape2D_ok4ba")
