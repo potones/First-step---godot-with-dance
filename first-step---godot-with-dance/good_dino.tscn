@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bayk4tgrkmrvu"]
 
 [ext_resource type="Texture2D" uid="uid://cll0ile1ddh6m" path="res://icon.svg" id="1_ms3ju"]
+[ext_resource type="Script" uid="uid://bh80imp6wfjjo" path="res://Scripts/good_dino.gd" id="1_ok4ba"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ok4ba"]
 size = Vector2(89, 79)
 
 [node name="Good Dino Prototype" type="Node2D" unique_id=494693777]
+script = ExtResource("1_ok4ba")
 
 [node name="Fun Dino" type="CharacterBody2D" parent="." unique_id=350063687]
 
@@ -26,3 +28,11 @@ texture = ExtResource("1_ms3ju")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Two Dino" unique_id=1476157077]
 position = Vector2(175, -1)
 shape = SubResource("RectangleShape2D_ok4ba")
+
+[node name="Timer" type="Timer" parent="." unique_id=207201677]
+wait_time = 0.5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1195547152]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="visibility_changed" from="CanvasLayer" to="." method="_on_canvas_layer_visibility_changed"]
